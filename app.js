@@ -18,6 +18,6 @@ function clearall(){
 function edit(e){
     console.log(e.parentNode.parentNode.firstChild.textContent);
     var editable = prompt("Edit your task", e.parentNode.parentNode.firstChild.textContent);
-    e.parentNode.firstChild.textContent  = editable;
+    e.parentNode.parentNode.firstChild.textContent  = editable;
 
 }
